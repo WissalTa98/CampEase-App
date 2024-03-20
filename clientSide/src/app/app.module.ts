@@ -76,7 +76,7 @@ import { ReservationListComponent } from './reservation-list/reservation-list.co
     UserComponent,
     ResetPasswordComponent,
     EditUserComponent,
-    ProductTableComponent
+    ProductTableComponent,
     FeedbackComponent,
     ReservationComponent,
     FeedbackListComponent,
