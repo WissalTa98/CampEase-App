@@ -19,9 +19,6 @@ public class MapperConfig {
                     mapper.map(ProductDto::getDescription, Product::setDescription);
                     mapper.map(ProductDto::getPrice, Product::setPrice);
                     mapper.map(ProductDto::getCategory, Product::setCategory);
-                    mapper.map(ProductDto::getColor, Product::setColor);
-                    mapper.map(ProductDto::getWeight, Product::setWeight);
-                    mapper.map(ProductDto::getState, Product::setState);
                 });
 
         return modelMapper;
