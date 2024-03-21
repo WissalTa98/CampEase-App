@@ -1,6 +1,7 @@
 package com.wissal.microproduct.dto;
 
 import com.wissal.microproduct.enumeration.ProductCategory;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,6 +23,7 @@ public class ProductDto {
 
     private double price;
     private boolean available;
+    @Enumerated(EnumType.STRING)
     private ProductCategory category;
     private  double size;
     private  double weight ;
