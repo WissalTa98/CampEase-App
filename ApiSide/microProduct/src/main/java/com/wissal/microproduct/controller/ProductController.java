@@ -58,5 +58,26 @@ public class ProductController {
                                               ProductCategory category){
         return iProductService.getProductByCategory(category);
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable int id){
+        iProductService.deleteProduct(id);
+    }
+
+    @PutMapping
+    public void update(@RequestBody Product product){
+        iProductService.UpdateProduct(product);
+    }
+
+    //for home screen
+
+    @GetMapping("/getNewestProduct")
+    public List<Product> getProductByCategory(){
+        return iProductService.getTop4Product();
+    }
+    @GetMapping("productCount")
+    public long getProductsCount(){
+        return this.iProductService.productCount();
+    }
 }
 
