@@ -37,7 +37,7 @@ public class ProductService implements IProductService{
     @Override
     @Transactional
     public void addProduct(Product product) {
-        productFileRepository.saveAll(product.getFiles());
+        //productFileRepository.saveAll(product.getFiles());
         productRepository.saveAndFlush(product);
 
     }
@@ -49,7 +49,7 @@ public class ProductService implements IProductService{
 
     @Transactional
     public void UpdateProduct(Product product) {
-        productFileRepository.saveAll(product.getFiles());
+        //productFileRepository.saveAll(product.getFiles());
         productRepository.saveAndFlush(product);
 
     }
