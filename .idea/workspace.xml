@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="206ff62a-6753-4dfa-b79e-8c5006c37c60" name="Changes" comment=" &quot;supprime idea&quot;" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2e5yDWNPx8cwpVzgByEERpHqWoC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/IdeaProjects/EurekaProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;550de7a49586e6f4e1008a9c5dbd916b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\IdeaProjects\CampEase-App\ApiSide" />
+      <recent name="C:\Users\PC\IdeaProjects\CampEase-App" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\IdeaProjects\CampEase-App\ApiSide" />
+      <recent name="C:\Users\PC\IdeaProjects\CampEase-App\ApiSide\microreservation" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MicroReservationApplication">
+    <configuration name="Angular Application (clientSide)" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="EurekaProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="CampEase-App" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="Discovery-server.com.example.eurekaproject.EurekaProjectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroReservationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="microreservation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rania.microreservation.MicroReservationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroReservationApplication1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microReservation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rania.microreservation.MicroReservationApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8082" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiSide/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="ApiSide/microreservation/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server (clientSide)" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/clientSide/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.ApiSide/Dockerfile" />
+      <item itemvalue="JavaScript Debug.Angular Application (clientSide)" />
+      <item itemvalue="npm.Angular CLI Server (clientSide)" />
+      <item itemvalue="Spring Boot.EurekaProjectApplication" />
+      <item itemvalue="Spring Boot.MicroReservationApplication" />
+      <item itemvalue="Spring Boot.MicroReservationApplication1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.ApiSide/Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="206ff62a-6753-4dfa-b79e-8c5006c37c60" name="Changes" comment="" />
+      <created>1711208614365</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711208614365</updated>
+      <workItem from="1711208615470" duration="1129000" />
+      <workItem from="1711233787233" duration="8045000" />
+      <workItem from="1711277599060" duration="533000" />
+      <workItem from="1711284903652" duration="23000" />
+      <workItem from="1711311862807" duration="2913000" />
+      <workItem from="1711316611553" duration="6771000" />
+      <workItem from="1711325431908" duration="4307000" />
+      <workItem from="1711377872325" duration="684000" />
+      <workItem from="1711378587094" duration="897000" />
+      <workItem from="1711379496559" duration="2317000" />
+      <workItem from="1711494416542" duration="4200000" />
+      <workItem from="1711534437563" duration="801000" />
+      <workItem from="1711809502195" duration="8695000" />
+      <workItem from="1711834141113" duration="4981000" />
+      <workItem from="1711900651538" duration="518000" />
+      <workItem from="1711923967185" duration="254000" />
+      <workItem from="1712007982180" duration="1586000" />
+      <workItem from="1712069973860" duration="3945000" />
+      <workItem from="1712078674290" duration="306000" />
+      <workItem from="1712079000108" duration="606000" />
+      <workItem from="1712085719079" duration="234000" />
+      <workItem from="1712086031427" duration="8000" />
+      <workItem from="1712086473223" duration="1653000" />
+      <workItem from="1712088138562" duration="10292000" />
+    </task>
+    <task id="LOCAL-00001" summary="&quot;ajout eureka client&quot;">
+      <created>1712091514116</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712091514116</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;update&quot;">
+      <created>1712102672807</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712102672807</updated>
+    </task>
+    <task id="LOCAL-00003" summary=" &quot;supprime idea&quot;">
+      <created>1712103684522</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712103684522</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="&quot;ajout eureka client&quot;" />
+    <MESSAGE value="&quot;update&quot;" />
+    <MESSAGE value=" &quot;supprime idea&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value=" &quot;supprime idea&quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.HibernateException" package="org.hibernate" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
