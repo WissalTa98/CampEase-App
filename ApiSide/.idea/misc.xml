@@ -6,11 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/microProduct/pom.xml" />
         <option value="$PROJECT_DIR$/discovery-server/pom.xml" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
-=======
-        <option value="$PROJECT_DIR$/event/pom.xml" />
->>>>>>> e7f22ad38e761e344a814f002fd3877fe116af3e
       </list>
     </option>
   </component>
