@@ -12,7 +12,6 @@ import java.util.Date;
 import java.util.List;
 
 public interface EventRepository  extends JpaRepository<Event,Integer> {
-    /*
     List<Event> findTop4ByCategory(EventCategory category);
     List<Event> findTop10ByOrderByStartDateDesc();
 
@@ -31,8 +30,5 @@ public interface EventRepository  extends JpaRepository<Event,Integer> {
             @Param("search") String search,
             Pageable pageable);
 
-    List<Event> findTop10ByCampPlaceIdCampPlace(Integer campPlaceId);
     long count();
-
-*/
 }
