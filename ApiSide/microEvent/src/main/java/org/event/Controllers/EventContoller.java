@@ -45,7 +45,7 @@ public class EventContoller {
         return event;
     }
 
-    @PostMapping("/addEevent")
+    @PostMapping("/addEvent")
     public Event addEvent(@ModelAttribute EventDto eventDto) {
         Event event = modelMapper.map(eventDto, Event.class);
 

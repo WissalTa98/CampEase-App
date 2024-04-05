@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.event</groupId>
-	<artifactId>event</artifactId>
+	<artifactId>microEvent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>event</name>
 	<description>event</description>
