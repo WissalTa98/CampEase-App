@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="206ff62a-6753-4dfa-b79e-8c5006c37c60" name="Changes" comment=" &quot;supprime idea&quot;" />
+    <list default="true" id="206ff62a-6753-4dfa-b79e-8c5006c37c60" name="Changes" comment=" &quot;&quot;">
+      <change afterPath="$PROJECT_DIR$/ApiSide/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiSide/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiSide/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiSide/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiSide/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiSide/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiSide/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiSide/microreservation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ApiSide/microreservation/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,17 +54,19 @@
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/IdeaProjects/EurekaProject&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/IdeaProjects/CampEase-App&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;550de7a49586e6f4e1008a9c5dbd916b&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;aee4644a3b6f40f3e6d9f3a7991a313b&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -82,11 +91,25 @@
     <configuration name="Angular Application (clientSide)" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
+    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="discovery-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wissal.discoveryserver.DiscoveryServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="CampEase-App" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="Discovery-server.com.example.eurekaproject.EurekaProjectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="event" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.event.EventApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,6 +152,8 @@
       <item itemvalue="Docker.ApiSide/Dockerfile" />
       <item itemvalue="JavaScript Debug.Angular Application (clientSide)" />
       <item itemvalue="npm.Angular CLI Server (clientSide)" />
+      <item itemvalue="Spring Boot.DiscoveryServerApplication" />
+      <item itemvalue="Spring Boot.EventApplication" />
       <item itemvalue="Spring Boot.EurekaProjectApplication" />
       <item itemvalue="Spring Boot.MicroReservationApplication" />
       <item itemvalue="Spring Boot.MicroReservationApplication1" />
@@ -170,7 +195,18 @@
       <workItem from="1712085719079" duration="234000" />
       <workItem from="1712086031427" duration="8000" />
       <workItem from="1712086473223" duration="1653000" />
-      <workItem from="1712088138562" duration="10292000" />
+      <workItem from="1712088138562" duration="12116000" />
+      <workItem from="1712187229880" duration="1907000" />
+      <workItem from="1712190180409" duration="39000" />
+      <workItem from="1712190231562" duration="29000" />
+      <workItem from="1712190267959" duration="1855000" />
+      <workItem from="1712333243996" duration="112000" />
+      <workItem from="1712333466705" duration="4705000" />
+      <workItem from="1712610498234" duration="217000" />
+      <workItem from="1712610733904" duration="36000" />
+      <workItem from="1712610799120" duration="62000" />
+      <workItem from="1712610907111" duration="1680000" />
+      <workItem from="1712626795914" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;ajout eureka client&quot;">
       <created>1712091514116</created>

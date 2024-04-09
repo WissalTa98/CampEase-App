@@ -1,0 +1,114 @@
+services:
+  discovery-service:
+    build: ./discovery-server
+    container_name: discovery-service
+    ports:
+      - '8761:8761'
+    expose:
+      - '8761'
+
+  ###########
+  reservation-service:
+    build: ./microreservation
+    container_name: reservation-service
+    ports:
+      - '9090:9090'
+    expose:
+      - '9090'
+    environment:
+      DISCOVERY_SERVICE_URL: http://localhost:8761/eureka
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-reservation:3306/ReservationMicroDb?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123
+
+    depends_on:
+      - discovery-service
+      - mysql-reservation
+    networks:
+      - my-network
+  ##########
+
+  event-service:
+    build: ./microEvent
+    container_name: event-service
+    ports:
+      - '8099:8099'
+    expose:
+      - '8099'
+    environment:
+      DISCOVERY_SERVICE_URL: http://localhost:8761/eureka
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-event:3306/EventDb?createDatabaseIfNotExist=true
+      MYSQL_HOST: mysql-event
+      MYSQL_PORT: 3306
+      MYSQL_DATABASE: EventDb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 1234
+
+    depends_on:
+      - discovery-service
+      - mysql-event
+    networks:
+      - my-network
+
+    #########
+
+  mysql-reservation:
+    image: mysql:latest
+    container_name: mysql-reservation
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: ReservationMicroDb
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: 123
+
+    volumes:
+      - ./mysql-reservation:/data/mysql
+
+    restart: unless-stopped
+    networks:
+      - my-network
+
+    #########
+
+  mysql-event:
+    image: mysql:latest
+    container_name: mysql-event
+    ports:
+      - "3308:3306"
+    environment:
+      MYSQL_DATABASE: EventDb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 1234
+
+    volumes:
+      - ./mysql-event:/data/mysql
+
+    restart: always
+    networks:
+      - my-network
+
+  #########
+  phpmyadmin-account:
+    depends_on:
+      - mysql-reservation
+
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - '8084:80'
+    environment:
+      PMA_ARBITRARY: 1
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: 123
+      PMA_HOST: ReservationMicroDb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123
+
+
+networks:
+  my-network:
+    driver: bridge
+
+
+
