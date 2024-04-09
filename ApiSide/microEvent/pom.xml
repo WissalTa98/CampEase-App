@@ -11,8 +11,8 @@
 	<groupId>org.event</groupId>
 	<artifactId>microEvent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>event</name>
-	<description>event</description>
+	<name>microEvent</name>
+	<description>microEvent</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.1</spring-cloud.version>
