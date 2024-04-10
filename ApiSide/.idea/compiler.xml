@@ -10,6 +10,7 @@
         <module name="api-gateway" />
         <module name="microEvent" />
         <module name="microProduct" />
+        <module name="MicroCampPlace" />
         <module name="discovery-server" />
         <module name="microreservation" />
       </profile>
@@ -20,12 +21,13 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="api-gateway" options="-parameters" />
+      <module name="MicroCampPlace" options="-parameters" />
+      <module name="api-gateway" options="" />
       <module name="discovery-server" options="-parameters" />
       <module name="event" options="-parameters" />
-      <module name="microEvent" options="-parameters" />
+      <module name="microEvent" options="" />
       <module name="microProduct" options="-parameters" />
-      <module name="microreservation" options="-parameters" />
+      <module name="microreservation" options="" />
     </option>
   </component>
 </project>
