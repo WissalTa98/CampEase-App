@@ -1,6 +1,0 @@
-org\event\Services\ServiceEventImp.class
-org\event\EventApplication.class
-org\event\Entity\Event.class
-org\event\Controllers\EventContoller.class
-org\event\Entity\EventCategory.class
-org\event\Repository\EventRepository.class
