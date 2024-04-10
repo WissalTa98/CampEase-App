@@ -21,7 +21,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("campPlace")
+@RequestMapping("api/campPlace")
 
 public class CampPlaceController {
     private final ModelMapper modelMapper;
