@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 @CrossOrigin(origins = "http://localhost:4200/")
 @RequiredArgsConstructor
-@RequestMapping("feedback")
+@RequestMapping("api/feedback")
 public class FeedbackController {
     private final FeedbackService feedbackService;
     private final ModelMapper modelMapper;
