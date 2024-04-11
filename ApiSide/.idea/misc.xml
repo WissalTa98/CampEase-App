@@ -6,8 +6,10 @@
       <list>
         <option value="$PROJECT_DIR$/microProduct/pom.xml" />
         <option value="$PROJECT_DIR$/discovery-server/pom.xml" />
+        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/event/pom.xml" />
-        <option value="$PROJECT_DIR$/microreservation/pom.xml" />
+        <option value="$PROJECT_DIR$/microEvent/pom.xml" />
+        <option value="$PROJECT_DIR$/microReservation/pom.xml" />
       </list>
     </option>
   </component>
