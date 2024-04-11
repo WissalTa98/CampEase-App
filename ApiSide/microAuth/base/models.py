@@ -1,5 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from django.contrib.auth.models import AbstractUser, BaseUserManager
+
+# Create your models here.
 
 class UserManager(BaseUserManager):
     def create_user(self, email, password, **extra_fields):
@@ -23,9 +25,7 @@ class UserManager(BaseUserManager):
         if not extra_fields.get('is_superuser'):
             raise ValueError("Superuser must have is_superuser = True")
         return self.create_user(email, password, **extra_fields)
-
-
-class CustomUser(AbstractBaseUser):
+class User(AbstractUser):
     GENDER_CHOICES = (
         (1, 'male'),
         (2, 'female'),
@@ -41,15 +41,15 @@ class CustomUser(AbstractBaseUser):
     first_name = models.CharField(max_length=255, null=True, blank=True)
     last_name = models.CharField(max_length=255, null=True, blank=True)
     username = models.CharField(max_length=255, null=True, blank=True)
-    tel = models.IntegerField()
-    address = models.CharField(max_length=255)
-    last_login_date = models.DateTimeField()
-    last_login_date_display = models.DateTimeField()
+    tel = models.IntegerField(null=True)
+    address = models.CharField(max_length=255, null=True)
+    last_login_date = models.DateTimeField(auto_now=True)
+    last_login_date_display = models.DateTimeField(auto_now=True)
     join_date = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    gender = models.SmallIntegerField(choices=GENDER_CHOICES)
-    government = models.SmallIntegerField(choices=Government_CHOICES)
+    gender = models.SmallIntegerField(choices=GENDER_CHOICES, null=True)
+    government = models.SmallIntegerField(choices=Government_CHOICES, null=True)
     taxNum = models.CharField(max_length=255, null=True, blank=True)
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
