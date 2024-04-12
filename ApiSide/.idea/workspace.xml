@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cd8f746d-4046-457d-8d7e-d0360feeff30" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microAuth/microAuth/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/microAuth/microAuth/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,7 @@
     &quot;Spring Boot.MicroReservationApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;SouhaielDev&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Souhaiel/CampEase-App/ApiSide/microProduct&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Souhaiel/CampEase-App/ApiSide/microAuth&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -204,6 +206,9 @@
       <workItem from="1712841482496" duration="8445000" />
       <workItem from="1712851103488" duration="3855000" />
       <workItem from="1712870159567" duration="876000" />
+      <workItem from="1712876505136" duration="134000" />
+      <workItem from="1712876930116" duration="54000" />
+      <workItem from="1712879575276" duration="53000" />
     </task>
     <servers />
   </component>
