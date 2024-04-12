@@ -16,8 +16,6 @@ CampEase Tunisia is a web application designed to enhance users' camping experie
 - Back-end: SpringBoot, Django DRF, MysQl, Postgresql, Java 17, python 3
 
  ## Services Used 
-- 7 services whose name are shown below have been devised within the scope of this project.
-
 - Eureka Server
 - API Gateway
 - Auth Service
@@ -26,3 +24,17 @@ CampEase Tunisia is a web application designed to enhance users' camping experie
 - CampPlace Service
 - Feedback Service
 - Reservation Service
+
+### 🔨 Run the App
+
+<b>Docker</b>
+
+<b>1 )</b> Install <b>Docker Desktop</b>. Here is the installation <b>link</b> : https://docs.docker.com/docker-for-windows/install/
+
+<b>2 )</b> Open <b>Terminal</b> under <b>resources</b> folder to run <b>Keycloak</b> and <b>RabbitMq</b> on <b>Docker</b> Container
+```
+    docker-compose up -d
+```
+<b>3 )</b> Implement Keycloak Settings
+```
+    1 ) Open Keycloak on the Browser through localhost:9999
