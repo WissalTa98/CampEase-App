@@ -38,3 +38,18 @@ CampEase Tunisia is a web application designed to enhance users' camping experie
 <b>3 )</b> Implement Keycloak Settings
 ```
     1 ) Open Keycloak on the Browser through localhost:9999
+
+### To execute the API's through the gateway
+    1) http://localhost:8088/api/register
+    2) http://localhost:8088/api/login
+    3) http://localhost:8088/api/logout
+    4) http://localhost:8088/api/product
+    5) http://localhost:8088/api/product/addProduct
+    6) http://localhost:8088/api/product 
+    7) http://localhost:8088/api/product/{id}
+    8) http://localhost:8088/api/product/getNewestProduct
+    9) http://localhost:8088/api/product/productCount
+    10) http://localhost:8088/api/feedback/addFeedback
+    11) http://localhost:8088/api/event/addEvent
+    12) http://localhost:8088/api/reservation/add
+
