@@ -21,7 +21,7 @@ export class productservice {
     let headers = new HttpHeaders();
     headers = headers.set('Content-Type', 'multipart/form-data');
 
-   return  this.httpClient.post(this.apiurl + 'product/addProduct', this.convertProductToFormData(product,files)) ;
+   return  this.httpClient.post(this.apiurl + 'api/product/addProduct', this.convertProductToFormData(product,files)) ;
 
   }
 
@@ -29,7 +29,7 @@ export class productservice {
     let headers = new HttpHeaders();
     headers = headers.set('Content-Type', 'multipart/form-data');
 
-   return  this.httpClient.put(this.apiurl + 'product/addProduct', this.convertProductToFormData(product,files)) ;
+   return  this.httpClient.put(this.apiurl + 'api/product/addProduct', this.convertProductToFormData(product,files)) ;
 
   }
   convertProductToFormData(product: Product, files: File[]): any {
@@ -54,7 +54,7 @@ export class productservice {
   getFilteredProducts(productFilterDto: ProductFilterDto, page: number, size: number): Observable<Page<Product>> {
     let params = new HttpParams();
     if (productFilterDto.categories && productFilterDto.categories.length > 0) {
-      params = params.append('categories', productFilterDto.categories.toString());
+      params = params.append('category', productFilterDto.categories.toString());
     }
     params = params.append('minPrice', productFilterDto.minPrice.toString());
     params = params.append('page', page.toString());
@@ -62,40 +62,36 @@ export class productservice {
     params = params.append('sort', productFilterDto.sort);
     params = params.append('search', productFilterDto.searchTerm);
 
-    return this.httpClient.get<Page<Product>>(this.apiurl + 'product/filteredProducts', { params });
+    return this.httpClient.get<Page<Product>>(this.apiurl + 'api/product/filteredProducts', { params });
   }
   getProductCategories(){
-    return this.httpClient.get<string[]>(this.apiurl+'product/categories');
-
+    return this.httpClient.get<string[]>(this.apiurl+'api/product/categories');
   }
   getSimilairProducts(category:any){
-    return this.httpClient.get<string[]>(this.apiurl + 'product/getSimilaireProduct/' + category);
+    return this.httpClient.get<string[]>(this.apiurl + 'api/product/getSimilaireProduct/' + category);
 
   }
 
   getAllProduct(){
-    return this.httpClient.get<Product[]>(this.apiurl+'product');
+    return this.httpClient.get<Product[]>(this.apiurl+'api/product');
   }
   getProductCount(){
-    return this.httpClient.get<number>(this.apiurl+'product/productCount');
+    return this.httpClient.get<number>(this.apiurl+'api/product/productCount');
   }
 
   getProductById(id:any){
-    return this.httpClient.get<Product>(this.apiurl+'product/'+id);
+    return this.httpClient.get<Product>(this.apiurl+'api/product/'+id);
   }
 
 
 //for home screen
 getNewestProducts(){
-  return this.httpClient.get<Product[]>(this.apiurl+'product/getNewestProduct');
+  return this.httpClient.get<Product[]>(this.apiurl+'api/product/getNewestProduct');
 }
 
   deleteProduct(id:any){
 
-    return this.httpClient.delete<string[]>(this.apiurl+'product/'+id);
-
-
-
+    return this.httpClient.delete<string[]>(this.apiurl+'api/product/'+id);
 
   }
 
