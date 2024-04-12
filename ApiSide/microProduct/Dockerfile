@@ -1,4 +1,4 @@
-FROM openjdk:17
-EXPOSE 8070
-ADD target/microProduct-0.0.1-SNAPSHOT.jar microProduct-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java" , "-jar" , "microProduct-0.0.1-SNAPSHOT.jar" ]
+FROM openjdk:17-alpine
+COPY target/*.jar app.jar
+ENTRYPOINT ["java","-jar", "app.jar"]
+EXPOSE 8091

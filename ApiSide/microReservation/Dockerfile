@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM openjdk:17-alpine
 COPY target/*.jar app.jar
 ENTRYPOINT ["java","-jar", "app.jar"]
-EXPOSE 9090
+EXPOSE 8092
