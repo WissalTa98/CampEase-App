@@ -9,7 +9,7 @@ import { AuthenticationService } from "./authentication.service";
 })
 export class ReservationService {
 
-  apiurl ="http://localhost:9090/";
+  apiurl ="http://localhost:8088/";
 
   constructor(private httpClient: HttpClient, private authenticationService : AuthenticationService){
   }

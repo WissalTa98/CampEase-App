@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class CampPlaceService {
 
-  apiurl ="http://localhost:9090/";
+  apiurl ="http://localhost:8088/";
 
   constructor(private httpClient: HttpClient){
 

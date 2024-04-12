@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from 'app/Models/user';
 import { AuthenticationService } from 'app/Services/authentication.service';
@@ -11,18 +11,34 @@ import { Role } from 'app/enum/role.enum';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
   public user: User = new User;
+  isLoggedIn: boolean = false;
 
   constructor(private router: Router, private authenticationService: AuthenticationService,
    private notificationService: NotificationService) {}
 
    ngOnInit(): void {
+    this.authenticationService.isUserLoggedIn();
     const user = this.authenticationService.getUserFromLocalCache();
     if (user !== null) {
       this.user = user;
     }
+  }
+
+  onLogIn(): void {
+    this.authenticationService.isUserLoggedIn();
+    this.isLoggedIn = true;
+    //this.router.navigate(['/login']);
+    this.sendNotification(NotificationType.SUCCESS, `You've been successfully logged in`);
+  }
+
+  onLogOut(): void {
+    this.authenticationService.logOut();
+    this.isLoggedIn = false;
+    this.router.navigate(['/login']);
+    this.sendNotification(NotificationType.SUCCESS, `You've been successfully logged out`);
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -48,16 +64,6 @@ onWindowScroll() {
     return '';
       }
 
-
-  public onLogOut(): void {
-    this.authenticationService.logOut();
-    this.router.navigate(['/login']);
-    this.sendNotification(NotificationType.SUCCESS, `You've been successfully logged out`);
-  }
-
-  isLoggedIn(): boolean {
-    return this.authenticationService.isUserLoggedIn();
-  }
 
   private sendNotification(notificationType: NotificationType, message: string): void {
     if (message) {

@@ -11,7 +11,7 @@ import { UserService } from "./user.service";
 })
 export class FeedbackService {
 
-  apiurl ="http://localhost:9090/";
+  apiurl ="http://localhost:8088/";
 
   constructor(private httpClient: HttpClient, private authenticationService: AuthenticationService){
   }
