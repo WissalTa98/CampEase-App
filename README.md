@@ -13,3 +13,16 @@ CampEase Tunisia is a web application designed to enhance users' camping experie
   
 ## Technologies Used
 - Front-end: Angular, HTML, CSS, Angular Material, TypeScript
+- Back-end: SpringBoot, Django DRF, MysQl, Postgresql, Java 17, python 3
+
+ ## Services Used 
+- 7 services whose name are shown below have been devised within the scope of this project.
+
+- Eureka Server
+- API Gateway
+- Auth Service
+- Product Service
+- Event Service
+- CampPlace Service
+- Feedback Service
+- Reservation Service
