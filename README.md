@@ -1,5 +1,6 @@
 # CampEase
-CampEase Tunisia is a web application designed to enhance users' camping experiences by providing comprehensive features for exploring and reserving camping events, offering feedback on camp locations, and managing camping products. Our platform aims to offer a seamless experience for users, enabling them to discover exciting camping opportunities and optimize their outdoor adventures.
+CampEase Tunisia is a web application designed with a robust microservice architecture to enhance users' camping experiences by providing comprehensive features for exploring and reserving camping events, offering feedback on camp locations, and managing camping products. Leveraging microservices allows for modularization and scalability, ensuring seamless performance even as demands grow.
+Our platform aims to offer a seamless experience for users, enabling them to discover exciting camping opportunities and optimize their outdoor adventures.
 
 ## Features
 ### For Normal Users
